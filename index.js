@@ -17,7 +17,6 @@ const io = socketIo(server, {
 
 io.on('connection', (socket) => {
     console.log('A client connected');
-
     // Handle events from client
     socket.on('message', (data) => {
         console.log('Received message from client:', data);
